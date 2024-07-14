@@ -1,7 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { Splashscreen } from "./pages";
+import "react-native-gesture-handler";
+import { NavigationContainer } from "@react-navigation/native";
+import Router from "./router";
 
 export default function App() {
-  return <Splashscreen />;
+  return (
+    <NavigationContainer>
+      <Router />
+    </NavigationContainer>
+  );
 }
